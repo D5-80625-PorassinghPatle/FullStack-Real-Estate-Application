@@ -1,3 +1,5 @@
+import { appendFile } from "fs";
+
 import mongoose from "mongoose";
 //creating a model in MongoDb 
 const userSchema = new mongoose.Schema({
@@ -16,5 +18,4 @@ const userSchema = new mongoose.Schema({
 },{timestamps:true});
 
 const User = mongoose.model('User',userSchema);
-
 export default User;
